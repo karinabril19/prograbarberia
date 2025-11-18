@@ -24,5 +24,3 @@ namespace prograbarberia.Models
  public DateTime FechaHora { get; set; }
  }
 }
-
-//prueba
