@@ -23,5 +23,4 @@ namespace prograbarberia.Models
  [Required]
  public DateTime FechaHora { get; set; }
  }
-
 }
