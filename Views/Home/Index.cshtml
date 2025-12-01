@@ -2,7 +2,72 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="py-md-20 py-12 bg-white">
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12">
+                <div class="mb-4 mb-xl-0 text-center text-md-start">
+                    <!-- Caption -->
+                    <h1 class="display-2 fw-bold mb-3 ls-sm ">Cortes Clásicos, Estilo Contemporáneo </h1>
+                    <p class="mb-4 lead ">
+                        IReserva tu cita hoy y sal con el mejor corte de tu vida.
+                    </p>           
+                   
+                </div>
+            </div>
+            <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-12">
+                <!-- Card -->
+                <div class="card smooth-shadow-md" style="z-index: 1;">
+                    <!-- Card body -->
+                    <div class="card-body p-6">
+                       
+                        <div class="mb-4">
+                            <div class="border-bottom"></div>
+                            <div class="text-center mt-n2  lh-1">
+                                <span class="bg-white px-2 fs-6 rounded">OR</span>
+                            </div>
+                        </div>
+                        <!-- Form -->
+                        <form>
+                            <!-- Username -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label visually-hidden">Email</label>
+                                <input type="email" id="email" class="form-control" name="email"
+                                       placeholder="Email" required="">
+                            </div>
+                            <!-- Password -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label visually-hidden">Password</label>
+                                <input type="password" id="password" class="form-control" name="password"
+                                       placeholder="Password" required="">
+                            </div>
+                            <!-- Button -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Start Courses for Free</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Card Footer -->
+                    <div class="card-footer px-6 py-4">
+                        <p class="mb-0">
+                            By continuing you accept the <a href="#"
+                                                            class="text-inherit fw-semibold">Terms of Use</a>,<a href="#"
+                                                                                                                 class="text-inherit fw-semibold">
+                                Privacy
+                                Policy
+                            </a>, and <a href="#" class="text-inherit fw-semibold">Data Policy</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Pattern -->
+                <div class="position-relative">
+                    <div class="position-absolute bottom-0 end-0 me-md-n3 mb-md-n6 me-lg-n4 mb-lg-n4 me-xl-n6 mb-xl-n8 d-none d-md-block ">
+                        <img src="../assets/images/pattern/dots-pattern.svg" alt=""
+                             class="opacity-25">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
