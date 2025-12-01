@@ -28,4 +28,11 @@ body {
     width: 100%;
     height: auto;
     position: relative;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    position: relative;
 }
