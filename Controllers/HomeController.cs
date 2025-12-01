@@ -17,7 +17,18 @@ namespace prograbarberia.Controllers
         {
             return View();
         }
-
+        public IActionResult Appointment()
+        {
+            return View();
+        }
+        public IActionResult Client()
+        {
+            return View();
+        }
+        public IActionResult Service()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
