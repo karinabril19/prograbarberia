@@ -20,3 +20,19 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.hero-image {
+    background-image: url('../lib/bootstrap/dist/css/Images/barberia.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    position: relative;
+}
