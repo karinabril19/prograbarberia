@@ -22,6 +22,6 @@ namespace prograbarberia.Models
  [MaxLength(200)]
  public string Correo { get; set; }
 
- public List<Cita> ListaCitas { get; set; } = new List<Cita>();
+ public ICollection<Cita> ListaCitas { get; set; } = new List<Cita>();
  }
 }
