@@ -14,10 +14,10 @@ namespace prograbarberia.Data
         {
         }
 
-        public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Empleado> Empleados { get; set; }
-        public DbSet<Servicio> Servicios { get; set; }
-        public DbSet<Cita> Citas { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Cliente> Clientes { get; set; } = null!;
+        public DbSet<Empleado> Empleados { get; set; } = null!;
+        public DbSet<Servicio> Servicios { get; set; } = null!;
+        public DbSet<Cita> Citas { get; set; } = null!;
+        public DbSet<Usuario> Usuarios { get; set; } = null!;
     }
 }

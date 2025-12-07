@@ -1,4 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using prograbarberia;
+using prograbarberia.Data; 
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<BarberiaDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BarberiaDbContext") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
