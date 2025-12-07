@@ -10,7 +10,7 @@ namespace prograbarberia.Models
 
  public class Usuario
  {
- public int Id { get; set; }
+ public int UsuarioId { get; set; }
 
  [Required]
  [MaxLength(100)]

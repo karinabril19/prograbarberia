@@ -6,7 +6,7 @@ namespace prograbarberia.Models
         public class Servicio
         {
         [Key] 
-        public int Id { get; set; }
+        public int ServicioId { get; set; }
 
         [Required]
         [MaxLength(100)]
@@ -20,7 +20,7 @@ namespace prograbarberia.Models
 
         //Clave foranea hacia cita
         [Required]
-        [ForeignKey("Cita")]
+        [ForeignKey("CitaId")]
         public int CitaId { get; set; }
         public Cita Cita { get; set; }
     }

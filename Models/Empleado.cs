@@ -5,7 +5,7 @@ namespace prograbarberia.Models
 {
  public class Empleado
  {
- public int Id { get; set; }
+ public int EmpleadoId { get; set; }
 
  [Required]
  [MaxLength(100)]

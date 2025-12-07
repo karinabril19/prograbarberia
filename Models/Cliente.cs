@@ -7,7 +7,7 @@ namespace prograbarberia.Models
  public class Cliente
  {
         [Key] 
-        public int Id { get; set; }
+        public int ClienteId { get; set; }
 
         [Required]
         [MaxLength(100)]
@@ -23,6 +23,7 @@ namespace prograbarberia.Models
         [MaxLength(200)]
         public string Correo { get; set; }
 
+        // Propiedad de navegación para la relación uno a muchos
         public ICollection<Cita> ListaCitas { get; set; } = new List<Cita>();
  }
 }

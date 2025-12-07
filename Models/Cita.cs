@@ -9,27 +9,24 @@ namespace prograbarberia.Models
  public class Cita
  {
 
-     [Key]
-     public int Id { get; set; }
+         [Key]
+         public int CitaId { get; set; }
 
-     //Clave foranea hacia cliente
-     [Required]
-     [ForeignKey("Cliente")]
-     public int ClienteId { get; set; }
-     public Cliente Cliente { get; set; }
+         [Required]
+           public Empleado Empleado { get; set; }
 
-     [Required]
-     public int ServicioId { get; set; }
-     public Servicio Servicio { get; set; }
+         [Required]
+         public DateTime FechaHora { get; set; }
 
-     [Required]
-     public int EmpleadoId { get; set; }
-     public Empleado Empleado { get; set; }
+        // Clave foránea para la relación uno a muchos
 
-     [Required]
-     public DateTime FechaHora { get; set; }
+        [Required]
+        [ForeignKey("ClienteId")]
+        public int ClienteId { get; set; }
+        public Cliente Cliente { get; set; }
 
-     public ICollection<Servicio> ListaServicios { get; set; } = new List<Servicio>();
+        // Propiedad de navegación para la relación uno a muchos
+        public ICollection<Servicio> ListaServicios { get; set; } = new List<Servicio>();
 
   }
 }
