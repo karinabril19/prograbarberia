@@ -4,13 +4,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace prograbarberia.Models
 {
+
+
  public class Cita
  {
 
      [Key]
      public int Id { get; set; }
 
+     //Clave foranea hacia cliente
      [Required]
+     [ForeignKey("IdCliente")]
      public int ClienteId { get; set; }
      public Cliente Cliente { get; set; }
 
@@ -24,5 +28,9 @@ namespace prograbarberia.Models
 
      [Required]
      public DateTime FechaHora { get; set; }
-     }
+
+     public ICollection<Servicio> ListaServicios { get; set; } = new List<Servicio>();
+
+  }
 }
+

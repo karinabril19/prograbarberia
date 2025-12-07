@@ -6,22 +6,23 @@ namespace prograbarberia.Models
 {
  public class Cliente
  {
- public int Id { get; set; }
+        [Key] 
+        public int Id { get; set; }
 
- [Required]
- [MaxLength(100)]
- public string Nombre { get; set; }
+        [Required]
+        [MaxLength(100)]
+        public string Nombre { get; set; }
 
- [Required]
- [Phone]
- [MaxLength(20)]
- public string Telefono { get; set; }
+        [Required]
+        [Phone]
+        [MaxLength(20)]
+        public string Telefono { get; set; }
 
- [Required]
- [EmailAddress]
- [MaxLength(200)]
- public string Correo { get; set; }
+        [Required]
+        [EmailAddress]
+        [MaxLength(200)]
+        public string Correo { get; set; }
 
- public ICollection<Cita> ListaCitas { get; set; } = new List<Cita>();
+        public ICollection<Cita> ListaCitas { get; set; } = new List<Cita>();
  }
 }
