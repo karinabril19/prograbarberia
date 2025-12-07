@@ -14,7 +14,7 @@ namespace prograbarberia.Models
 
      //Clave foranea hacia cliente
      [Required]
-     [ForeignKey("IdCliente")]
+     [ForeignKey("Cliente")]
      public int ClienteId { get; set; }
      public Cliente Cliente { get; set; }
 

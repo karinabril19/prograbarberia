@@ -20,7 +20,7 @@ namespace prograbarberia.Models
 
         //Clave foranea hacia cita
         [Required]
-        [ForeignKey("IdCliente")]
+        [ForeignKey("Cita")]
         public int CitaId { get; set; }
         public Cita Cita { get; set; }
     }
